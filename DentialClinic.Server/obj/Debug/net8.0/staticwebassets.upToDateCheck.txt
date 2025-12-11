@@ -1,0 +1,25 @@
+wwwroot\uploads\vendors\cnic\dcf29182-f023-4924-9799-2ee33bdb28f8_sync-squad logo.jpeg
+wwwroot\uploads\vendors\cnic\Cnic_front_26092025100744.jpeg
+wwwroot\uploads\vendors\cnic\Cnic_front_05092025165237.PNG
+wwwroot\uploads\vendors\cnic\Cnic_front_05092025165137.PNG
+wwwroot\uploads\vendors\cnic\a5fa8f4c-7b00-4e91-8c35-a2e523552c60_sync-squad logo.jpeg
+wwwroot\uploads\vendors\cnic\51b4fcb2-a67c-4db0-8604-dd0afed15ef4_Vendors.PNG
+wwwroot\uploads\Receipts\receipt_20251006_135752_771ce477.jpeg
+wwwroot\uploads\Receipts\receipt_20251006_133334_0c6e3062.jpeg
+wwwroot\uploads\Receipts\receipt_20251006_133120_0341a3c6.jpeg
+wwwroot\uploads\Receipts\receipt_20251006_132949_39bcbb5d.jpeg
+wwwroot\uploads\Receipts\receipt_20251006_115823_14770071.png
+wwwroot\uploads\Receipts\material_receipt_20251028_055553_02b15126.png
+wwwroot\uploads\Receipts\material_receipt_20251028_055423_5ecfdaf1.png
+wwwroot\uploads\dispatches\slip_20251028_135914_a6c8334b.png
+wwwroot\uploads\dispatches\slip_20251028_135748_8b24603a.png
+wwwroot\uploads\dispatches\slip_20251003_114816_b0c1097d.png
+wwwroot\uploads\dispatches\slip_20251003_114726_00030396.png
+wwwroot\uploads\dispatches\slip_20251003_112538_9a7f2b94.png
+wwwroot\uploads\dispatches\built_20251028_142423_7cf3b32f.png
+wwwroot\uploads\dispatches\built_20251028_080400_5a1bbe43.jpeg
+wwwroot\uploads\dispatches\built_20251028_073352_6a5a1cf7.png
+wwwroot\uploads\dispatches\built_20251027_131554_a9f3412f.png
+wwwroot\uploads\cashbook_receipts\receipt_20251006_111201_a6063281.png
+wwwroot\uploads\cashbook_receipts\receipt_20251003_110442_d9aec160.jpeg
+wwwroot\uploads\20250909_135651382_sync-squad logo.jpeg

@@ -1,0 +1,421 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\development\\DentailPro\\DentialClinic.Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\services\\branchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:services\\branchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\branch\\branchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\branch\\branchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\usermanagement\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\usermanagement\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\branch\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\branch\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\billing\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\billing\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\visit\\visittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\visit\\visittreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\visit\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\visit\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\appointment\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\appointment\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\treatment\\treatmentcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\treatment\\treatmentcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\doctor\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\doctor\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\patient\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\patient\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\usermanagement\\rolemenus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\usermanagement\\rolemenus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\usermanagement\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\usermanagement\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\usermanagement\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\usermanagement\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\treatment\\treatmentcatalogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\treatment\\treatmentcatalogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\patient\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\patient\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\models\\visit\\visitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:models\\visit\\visitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\controllers\\api\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:controllers\\api\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\interfaces\\ibranchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:interfaces\\ibranchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\controllers\\api\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:controllers\\api\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|e:\\development\\dentailpro\\dentialclinic.server\\controllers\\api\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A7A63-BD67-E91A-428C-DA34AA609901}|DentialClinic.Server.csproj|solutionrelative:controllers\\api\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VisitDto.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\VisitDto.cs",
+              "RelativeDocumentMoniker": "Models\\Visit\\VisitDto.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\VisitDto.cs",
+              "RelativeToolTip": "Models\\Visit\\VisitDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:13:50.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAEYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:57:55.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Appointment\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment\\Appointment.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Appointment\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:01:30.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Visit.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\Visit.cs",
+              "RelativeDocumentMoniker": "Models\\Visit\\Visit.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\Visit.cs",
+              "RelativeToolTip": "Models\\Visit\\Visit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:04:46.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BranchDto.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Branch\\BranchDto.cs",
+              "RelativeDocumentMoniker": "Models\\Branch\\BranchDto.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Branch\\BranchDto.cs",
+              "RelativeToolTip": "Models\\Branch\\BranchDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA1wA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:59:25.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BranchService.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\BranchService.cs",
+              "RelativeDocumentMoniker": "Services\\BranchService.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\BranchService.cs",
+              "RelativeToolTip": "Services\\BranchService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAD4vw4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:14:51.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Billing\\Invoice.cs",
+              "RelativeDocumentMoniker": "Models\\Billing\\Invoice.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Billing\\Invoice.cs",
+              "RelativeToolTip": "Models\\Billing\\Invoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:34:37.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Branch\\Branch.cs",
+              "RelativeDocumentMoniker": "Models\\Branch\\Branch.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Branch\\Branch.cs",
+              "RelativeToolTip": "Models\\Branch\\Branch.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:44:35.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\UserManagement\\Users.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\Users.cs",
+              "RelativeToolTip": "Models\\UserManagement\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:57:30.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\UserRole.cs",
+              "RelativeDocumentMoniker": "Models\\UserManagement\\UserRole.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\UserRole.cs",
+              "RelativeToolTip": "Models\\UserManagement\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:30:00.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoleMenus.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\RoleMenus.cs",
+              "RelativeDocumentMoniker": "Models\\UserManagement\\RoleMenus.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\RoleMenus.cs",
+              "RelativeToolTip": "Models\\UserManagement\\RoleMenus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:30:38.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Patient\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient\\Patient.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Patient\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:31:24.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TreatmentCatalog.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Treatment\\TreatmentCatalog.cs",
+              "RelativeDocumentMoniker": "Models\\Treatment\\TreatmentCatalog.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Treatment\\TreatmentCatalog.cs",
+              "RelativeToolTip": "Models\\Treatment\\TreatmentCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:32:23.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VisitTreatment.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\VisitTreatment.cs",
+              "RelativeDocumentMoniker": "Models\\Visit\\VisitTreatment.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Visit\\VisitTreatment.cs",
+              "RelativeToolTip": "Models\\Visit\\VisitTreatment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:33:59.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BranchesController.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\BranchesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Api\\BranchesController.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\BranchesController.cs",
+              "RelativeToolTip": "Controllers\\Api\\BranchesController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:08:11.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Doctor\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor\\Doctor.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Doctor\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:29:19.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IBranchService.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Interfaces\\IBranchService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IBranchService.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Interfaces\\IBranchService.cs",
+              "RelativeToolTip": "Interfaces\\IBranchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:05:33.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\Roles.cs",
+              "RelativeDocumentMoniker": "Models\\UserManagement\\Roles.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\UserManagement\\Roles.cs",
+              "RelativeToolTip": "Models\\UserManagement\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:48:15.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PatientDto.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Patient\\PatientDto.cs",
+              "RelativeDocumentMoniker": "Models\\Patient\\PatientDto.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Patient\\PatientDto.cs",
+              "RelativeToolTip": "Models\\Patient\\PatientDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:21:09.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TreatmentCatalogDto.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Treatment\\TreatmentCatalogDto.cs",
+              "RelativeDocumentMoniker": "Models\\Treatment\\TreatmentCatalogDto.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Models\\Treatment\\TreatmentCatalogDto.cs",
+              "RelativeToolTip": "Models\\Treatment\\TreatmentCatalogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:21:22.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T10:22:35.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AppointmentService.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAMwBEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:03:26.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Api\\AppointmentsController.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\AppointmentsController.cs",
+              "RelativeToolTip": "Controllers\\Api\\AppointmentsController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIAywCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:02:38.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\DoctorService.cs",
+              "RelativeDocumentMoniker": "Services\\DoctorService.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Services\\DoctorService.cs",
+              "RelativeToolTip": "Services\\DoctorService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAMwFUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:31:00.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Api\\UserManagementController.cs",
+              "ToolTip": "E:\\development\\DentailPro\\DentialClinic.Server\\Controllers\\Api\\UserManagementController.cs",
+              "RelativeToolTip": "Controllers\\Api\\UserManagementController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAD4vzAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:15:18.822Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+E:\development\BiomassPro\biomass.client\obj\Debug\biomass.client.esproj.CoreCompileInputs.cache
+E:\development\DentailPro\biomass.client\obj\Debug\biomass.client.esproj.CoreCompileInputs.cache

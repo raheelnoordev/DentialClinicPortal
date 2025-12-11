@@ -1,0 +1,468 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  IconButton,
+  Button,
+  Typography,
+  Chip,
+  Avatar,
+  Tooltip,
+  Grid,
+  Divider,
+  InputAdornment,
+  TextField,
+  Alert,
+  CircularProgress,
+  Card,
+  CardContent,
+} from "@mui/material";
+import {
+  Edit,
+  Delete,
+  Visibility,
+  Search,
+  Person,
+  Refresh,
+  FilterList,
+} from "@mui/icons-material";
+import axios from "axios";
+import { getAuthHeaders } from "../../../utils/auth";
+import { getBaseUrl } from "../../../utils/api";
+
+const ViewUsers = ({ setUserData, onError, onSuccess, refreshTrigger }) => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [error, setError] = useState("");
+  const [customers, setCustomers] = useState([]);
+
+  useEffect(() => {
+    fetchUsers();
+    fetchCustomers();
+  }, []);
+
+  // Listen for refreshTrigger to automatically refresh users list
+  useEffect(() => {
+    if (refreshTrigger > 0) {
+      console.log("Refreshing users list due to refreshTrigger:", refreshTrigger);
+      fetchUsers();
+    }
+  }, [refreshTrigger]);
+
+  const fetchUsers = async () => {
+    try {
+      setLoading(true);
+      setError("");
+      const response = await axios.get(
+        `${getBaseUrl()}/UserManagement/GetUsersList`,
+        {
+          headers: getAuthHeaders(),
+        }
+      );
+
+      if (response.data && response.data.success) {
+        console.log("API Response:", response.data.result);
+        // The API returns users directly with the correct structure
+        const users = response.data.result || [];
+        console.log("Users:", users);
+        setUsers(users);
+      } else {
+        setError(response.data?.message || "Failed to fetch users");
+      }
+    } catch (error) {
+      console.error("Error fetching users:", error);
+      setError("Failed to fetch users. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchCustomers = async () => {
+    try {
+      const response = await axios.get(
+        `${getBaseUrl()}/Customers/GetAllCustomers`,
+        {
+          headers: getAuthHeaders(),
+        }
+      );
+      if (response.data && response.data.success) {
+        setCustomers(response.data.result || []);
+      }
+    } catch (error) {
+      console.error("Error fetching customers:", error);
+    }
+  };
+
+  // Helper function to get customer assignment display text
+  const getCustomerAssignmentText = (user) => {
+    // Customer assignment not in current API response
+    return "N/A";
+  };
+
+  // Helper function to get customer assignment color
+  const getCustomerAssignmentColor = (user) => {
+    if (!user.customerIds || user.customerIds.length === 0) {
+      return "#6B7280"; // Gray for no assignment
+    }
+    return "#10B981"; // Green for assigned
+  };
+
+  const handleEditUser = (user) => {
+    console.log("Editing user:", user);
+    // Determine if this is a new user being added or existing user being edited
+    
+    // Prepare user data with all necessary fields for editing
+    const userData = {
+      ...user,
+      userId: user.userId,
+      roleIds: user.roleId ? [user.roleId] : [], // Convert single roleId to array
+      passwordHash: user.passwordHash || "" // Include password for editing
+    };
+    
+    console.log("Setting edited user data to:", userData);
+    
+    // Set the user data in the parent component so the AddUser form can populate
+    if (setUserData) {
+      setUserData(userData);
+    }
+    
+    // Optional: Scroll to the form
+    const formElement = document.getElementById('userForm');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleDeleteUser = async (userId) => {
+    if (window.confirm("Are you sure you want to delete this user?")) {
+      try {
+        const response = await axios.delete(
+          `${getBaseUrl()}/UserManagement/DeleteUserById?userId=${userId}`,
+          {
+            headers: getAuthHeaders(),
+          }
+        );
+
+        if (response.data && response.data.success) {
+          // Call onSuccess to trigger refresh and show notification
+          if (onSuccess) {
+            onSuccess('User deleted successfully!');
+          }
+        } else {
+          const errorMessage = response.data?.message || "Failed to delete user";
+          if (onError) {
+            onError(errorMessage);
+          }
+        }
+      } catch (error) {
+        console.error("Error deleting user:", error);
+        const errorMessage = "Failed to delete user. Please try again.";
+        if (onError) {
+          onError(errorMessage);
+        }
+      }
+    }
+  };
+
+  const handleDeactivateUser = async (userId) => {
+    try {
+      const response = await axios.get(
+        `${getBaseUrl()}/UserManagement/DeactivateUserById?userId=${userId}`,
+        {
+          headers: getAuthHeaders(),
+        }
+      );
+
+        if (response.data && response.data.success) {
+          // Call onSuccess to trigger refresh and show notification
+          if (onSuccess) {
+            onSuccess('User deactivated successfully!');
+          }
+        } else {
+          const errorMessage = response.data?.message || "Failed to deactivate user";
+          if (onError) {
+            onError(errorMessage);
+          }
+        }
+    } catch (error) {
+      console.error("Error deactivating user:", error);
+      const errorMessage = "Failed to deactivate user. Please try again.";
+      if (onError) {
+        onError(errorMessage);
+      }
+    }
+  };
+
+  const handleRefresh = async () => {
+    await fetchUsers();
+  };
+
+  const filteredUsers = users.filter((user) => {
+    const matches =
+      user.fullName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      user.phone?.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matches;
+  });
+
+  const getStatusColor = (enabled) => {
+    return enabled === "Y" ? "success" : "error";
+  };
+
+  const getTeamLeadColor = (isTeamLead) => {
+    return isTeamLead === "Y" ? "primary" : "default";
+  };
+
+  return (
+    <Box sx={{ width: "100%", p: 3 }}>
+      {/* Error Alert */}
+      {error && (
+        <Alert severity='error' sx={{ mb: 3, borderRadius: "12px" }}>
+          {error}
+        </Alert>
+      )}
+
+      {/* Search Bar */}
+      <Card
+        sx={{
+          borderRadius: "16px",
+          boxShadow: "0 4px 20px rgba(34, 139, 34, 0.08)",
+        }}
+      >
+        <CardContent sx={{ p: 3 }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <TextField
+              fullWidth
+              placeholder='Search users by name, username, or employee number...'
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <Search sx={{ color: "#228B22" }} />
+                  </InputAdornment>
+                ),
+              }}
+              sx={{
+                maxWidth: 500,
+                "& .MuiOutlinedInput-root": {
+                  borderRadius: "12px",
+                  "&:hover .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#228B22",
+                  },
+                  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#228B22",
+                    borderWidth: "2px",
+                  },
+                },
+              }}
+            />
+          </Box>
+        </CardContent>
+      </Card>
+
+      {/* Loading State */}
+      {loading && (
+        <Box sx={{ display: "flex", justifyContent: "center", py: 6 }}>
+          <CircularProgress sx={{ color: "#228B22" }} size={48} />
+        </Box>
+      )}
+
+      {/* Users Table */}
+      {!loading && filteredUsers.length > 0 && (
+        <Card
+          sx={{
+            borderRadius: "16px",
+            overflow: "hidden",
+            boxShadow: "0 4px 20px rgba(34, 139, 34, 0.08)",
+          }}
+        >
+          <TableContainer>
+            <Table>
+              <TableHead>
+                <TableRow
+                  sx={{
+                    background:
+                      "linear-gradient(135deg, #228B22 0%, #32CD32 100%)",
+                    "& th": {
+                      color: "white",
+                      fontWeight: 700,
+                      fontSize: "0.9rem",
+                      borderBottom: "none",
+                      py: 2,
+                    },
+                  }}
+                >
+                  <TableCell>User</TableCell>
+                  <TableCell>Email</TableCell>
+                  <TableCell>Role</TableCell>
+                  <TableCell>Branch</TableCell>
+                  <TableCell>Status</TableCell>
+                  <TableCell>Phone</TableCell>
+                  <TableCell align='center'>Actions</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {filteredUsers.map((user, index) => (
+                  <TableRow
+                    key={user.userId}
+                    hover
+                    sx={{
+                      "&:nth-of-type(even)": { bgcolor: "#f8fafc" },
+                      "&:hover": {
+                        bgcolor: "rgba(34, 139, 34, 0.02)",
+                        transition: "background-color 0.2s ease",
+                      },
+                    }}
+                  >
+                    <TableCell>
+                      <Box sx={{ display: "flex", alignItems: "center" }}>
+                        <Avatar
+                          sx={{
+                            mr: 2,
+                            bgcolor: "#228B22",
+                            boxShadow: "0 4px 12px rgba(34, 139, 34, 0.3)",
+                            width: 40,
+                            height: 40,
+                          }}
+                        >
+                          {user.fullName?.charAt(0) || 'U'}
+                        </Avatar>
+                        <Box>
+                          <Typography
+                            variant='body2'
+                            sx={{ fontWeight: 600, color: "#1e293b" }}
+                          >
+                            {user.fullName || "N/A"}
+                          </Typography>
+                        </Box>
+                      </Box>
+                    </TableCell>
+                    <TableCell>
+                      <Typography
+                        variant='body2'
+                        sx={{ color: "#475569", fontWeight: 500 }}
+                      >
+                        {user.email || "N/A"}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Chip
+                        label={`Role ${user.roleId || 'N/A'}`}
+                        size='small'
+                        sx={{
+                          bgcolor: "rgba(34, 139, 34, 0.1)",
+                          color: "#228B22",
+                          fontWeight: 600,
+                          borderRadius: "8px",
+                        }}
+                      />
+                    </TableCell>
+                    <TableCell>
+                      <Typography
+                        variant='body2'
+                        sx={{ color: "#475569", fontWeight: 500 }}
+                      >
+                        {user.branchId || "N/A"}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Chip
+                        label={user.isActive ? "Active" : "Inactive"}
+                        size='small'
+                        sx={{
+                          bgcolor:
+                            user.isActive
+                              ? "rgba(34, 197, 94, 0.1)"
+                              : "rgba(239, 68, 68, 0.1)",
+                          color: user.isActive ? "#22c55e" : "#ef4444",
+                          fontWeight: 600,
+                          borderRadius: "8px",
+                        }}
+                      />
+                    </TableCell>
+                    <TableCell>
+                      <Typography variant='body2' sx={{ color: "#475569" }}>
+                        {user.phone || "N/A"}
+                      </Typography>
+                    </TableCell>
+                    <TableCell align='center'>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          gap: 1,
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Tooltip title='Edit User'>
+                          <IconButton
+                            size='small'
+                            onClick={() => handleEditUser(user)}
+                            sx={{
+                              color: "#228B22",
+                              p: 1,
+                              bgcolor: "rgba(34, 139, 34, 0.1)",
+                              "&:hover": {
+                                bgcolor: "rgba(34, 139, 34, 0.2)",
+                              },
+                              transition: "background-color 0.2s ease",
+                            }}
+                          >
+                            <Edit sx={{ fontSize: "1.1rem" }} />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip title='Delete User'>
+                          <IconButton
+                            size='small'
+                            onClick={() => handleDeleteUser(user.userId)}
+                            sx={{
+                              color: "#ef4444",
+                              p: 1,
+                              bgcolor: "rgba(239, 68, 68, 0.1)",
+                              "&:hover": {
+                                bgcolor: "rgba(239, 68, 68, 0.2)",
+                              },
+                              transition: "background-color 0.2s ease",
+                            }}
+                          >
+                            <Delete sx={{ fontSize: "1.1rem" }} />
+                          </IconButton>
+                        </Tooltip>
+                      </Box>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Card>
+      )}
+
+      {/* No Results Message */}
+      {!loading && filteredUsers.length === 0 && (
+        <Box sx={{ textAlign: "center", py: 6 }}>
+          <Typography variant='h6' sx={{ color: "#64748b", mb: 1 }}>
+            {users.length === 0
+              ? "No users found."
+              : "No users match your search criteria."}
+          </Typography>
+          <Typography variant='body2' sx={{ color: "#94a3b8" }}>
+            Try adjusting your search terms or add new users to get started.
+          </Typography>
+        </Box>
+      )}
+    </Box>
+  );
+};
+
+export default ViewUsers;
