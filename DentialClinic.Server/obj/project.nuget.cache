@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eq8eshOPSTU=",
+  "dgSpecHash": "QCwEWnY0FQY=",
   "success": true,
-  "projectFilePath": "E:\\development\\DentailPro\\DentialClinic.Server\\DentialClinic.Server.csproj",
+  "projectFilePath": "E:\\development\\DentialEWO\\DentialClinic.Server\\DentialClinic.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SS-3\\.nuget\\packages\\awssdk.cognitoidentityprovider\\4.0.1.13\\awssdk.cognitoidentityprovider.4.0.1.13.nupkg.sha512",
     "C:\\Users\\SS-3\\.nuget\\packages\\awssdk.core\\4.0.0.17\\awssdk.core.4.0.0.17.nupkg.sha512",

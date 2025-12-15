@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\development\\DentailPro\\DentialClinic.Server\\DentialClinic.Server.csproj": {}
+    "E:\\development\\DentialEWO\\DentialClinic.Server\\DentialClinic.Server.csproj": {}
   },
   "projects": {
-    "E:\\development\\DentailPro\\DentialClinic.Server\\DentialClinic.Server.csproj": {
+    "E:\\development\\DentialEWO\\DentialClinic.Server\\DentialClinic.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\development\\DentailPro\\DentialClinic.Server\\DentialClinic.Server.csproj",
+        "projectUniqueName": "E:\\development\\DentialEWO\\DentialClinic.Server\\DentialClinic.Server.csproj",
         "projectName": "DentialClinic.Server",
-        "projectPath": "E:\\development\\DentailPro\\DentialClinic.Server\\DentialClinic.Server.csproj",
+        "projectPath": "E:\\development\\DentialEWO\\DentialClinic.Server\\DentialClinic.Server.csproj",
         "packagesPath": "C:\\Users\\SS-3\\.nuget\\packages\\",
-        "outputPath": "E:\\development\\DentailPro\\DentialClinic.Server\\obj\\",
+        "outputPath": "E:\\development\\DentialEWO\\DentialClinic.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:53731",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "E:\\development\\DentailPro\\DentialClinic.Server\\..\\dentialClinic.client",
+"WorkingDirectory": "E:\\development\\DentialEWO\\DentialClinic.Server\\..\\dentialClinic.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }
